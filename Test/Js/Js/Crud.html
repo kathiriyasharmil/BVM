@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>JS CRUD</title>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <src="https:code.jquery.com /jquery-3.6.0.min.js">
+
+    <link rel="stylesheet" type="text/css" href="Crud.css" />
+  </head>
+
+  <body>
+    <h1 class="title">JavaScript CRUD</h1>
+    <div class="inputField">
+    <div class="box">
+    <div class="line">
+      <div >
+        <label class="label">Name:</label>
+      </div>
+        <input
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          type="text"
+          class="input"
+          style="width:93%"
+          maxlength="30"
+        />
+        <div>
+          <span class="error" id="nameError"></span>
+        </div>
+     </div>
+      
+     <div class="line">
+      <div>
+        <label class="label">Age:</label>
+      </div>
+        <input name="age"
+         id="age"
+         placeholder="Enter your age"
+         type="number" 
+         class="input"
+         />
+         <div>
+          <span class="error" id="ageError"></span>
+        </div>
+    </div>
+
+      <div class="line">
+          <div>
+        <label class="label">Email:</label>
+          </div>
+        <input
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+          type="text"
+          class="input"
+          style="width:93%"
+          maxlength="30"
+        />
+        <div>
+          <span class="error" id="emailError"></span>
+        </div>
+      </div>
+
+      <div class="line">
+          <div>
+        <label class="label">Number:</label>
+    </div>
+        <input
+          name="number"
+          id="number"
+          placeholder="Enter your Number"
+          type="number"
+          class="input"
+          style="width:93%"
+          maxlength="10"
+        />
+        <div>
+          <span class="error" id="numberError"></span>
+        </div>
+      </div>
+
+      <div class="line">
+        <label class="label">Gender:</label>
+
+        <input name="gender" value="Male" id="male" type="radio" />
+        <label>Male</label>
+
+        <input  name="gender" value="Female" id="female" type="radio"/>
+        <label>Female</label>
+        <div>
+          <span class="error" id="genderError"></span>
+        </div>
+      </div>
+
+      <div class="line">
+        <label class="label">Country:</label>
+        
+         <select name="country" id="country" class="dropDown">
+          <option disabled selected value value="">Select</option>
+          <option value="INDIA">INDIA</option>
+          <option value="JAPAN">JAPAN</option> 
+          <option value="RUSSIA">RUSSIA</option> 
+        </select>
+        <div>
+          <span class="error" id="countryError"></span>
+        </div>
+      </div>
+
+      <div class="line">
+        <label class="label">Language:</label>
+        <span>
+            <label>English:</label>
+            <input name="language" type="checkbox" value="English" id="english"/>
+        </span>
+
+        <span>
+            <label>Gujarati:</label>
+            <input name="language" type="checkbox" value="Gujarati" id="gujarati"/>
+        </span>
+        <span>
+            <label>Hindi:</label>
+            <input name="language" type="checkbox" value="Hindi" id="hindi"/>
+        </span>
+        <div>
+          <span class="error" id="languageError"></span>
+        </div>
+      </div>
+    
+    </div>
+
+</div>
+
+<div class="btn">
+    <button class="submit" type="button" onclick="Submit()">Submit</button>
+  </div>
+
+    <table class="table" align="center" width="100%">
+      <thead>
+        <tr class="thead">
+          <th>Roll Number</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Number</th>
+          <th>Gender</th>
+          <th>Country</th>
+          <th>Language</th>
+          <th>Change</th>
+        </tr>
+      </thead>
+
+      <tbody  style="border-bottom: 3px groove;" id="body"></tbody>
+    </table>
+  </body>
+
+  <script src="./Crud.js"></script>
+</html>
+
+<!-- 
+name
+Age
+email
+mobileNumber
+gender
+country
+language -->

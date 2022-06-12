@@ -1,0 +1,67 @@
+.title{
+    text-align: center;
+    color: #716d6d;
+}
+
+.line{
+    margin-bottom: 8px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 21px;
+}
+
+.table{
+    margin-top: 30px;
+    border: outset;
+    background-color: white;
+    border-radius: 23px;
+}
+
+.inputField{
+    display: flex;
+    justify-content: center;
+}
+ html{
+    background-color: #d5d7d8;
+ }
+
+ .box{
+     background-color: white;
+     padding: 20px;
+     border-radius: 16px; 
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ .input{
+    line-height: 26px;
+    border-radius: 15px;
+    padding-left: 10px;
+ }
+
+ .label{
+    line-height: 26px;
+    font-family: sans-serif;
+ }
+
+.submit{
+    padding: 10px;
+    line-height: 16px;
+    border-radius: 16px;
+}
+
+.dropDown{
+    padding: 5px;
+    border-radius: 16px;
+    width: 130px;
+}
+
+.thead{
+    height: 36px;
+    border: oldlace;
+}
+
+.error{
+    color: #d61e1e;
+}
